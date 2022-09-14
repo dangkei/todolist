@@ -31,6 +31,9 @@
         {
           title: '练功',
           complete: false
+        },{
+          title: '敲代码',
+          complete: false
         },
       ])
       return {
