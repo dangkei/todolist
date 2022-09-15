@@ -1,6 +1,7 @@
 <template>
   <div>
-    <input placeholder="清输入任务名称" v-model="value">
+    <input placeholder="清输入任务名称!!
+" v-model="value">
   </div>
 </template>
 
