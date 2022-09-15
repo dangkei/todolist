@@ -3,6 +3,7 @@
     <navHeader></navHeader>
     <navMain></navMain>
     <navFooter></navFooter>
+    <HelloWorld></HelloWorld>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
   import navHeader from '@/components/navHeader/NavHeader'
   import navMain from '@/components/navMain/NavMain'
   import navFooter from '@/components/navFooter/NavFooter'
+  import HelloWorld from '@/components/HelloWorld'
 
   import { defineComponent, ref, reactive, toRefs } from 'vue'
 
@@ -19,7 +21,8 @@
     components: {
       navHeader,
       navMain,
-      navFooter
+      navFooter,
+      HelloWorld
     },
     setup (props, ctx) {
       /*const number = ref(1000)
