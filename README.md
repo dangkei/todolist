@@ -66,14 +66,15 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'HomeView',
   props: {
-
+	//从父组件继承
   },
   components: {
-    // HelloWorld
+    // HelloWorld， 引用的子组件
   },
   setup (props, ctx) {
+    //这里编写js
     return {
-
+		//这里返回在模板里需要用到的变量
     }
   }
 })
@@ -87,4 +88,4 @@ export default defineComponent({
 
 ## 版本3
 
-##
+## 这是test分支

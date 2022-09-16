@@ -3,7 +3,7 @@
     <navHeader></navHeader>
     <navMain></navMain>
     <navFooter></navFooter>
-    <HelloWorld></HelloWorld>
+    <HelloWorld msg="Welcome to Your Vue.js App"></HelloWorld>
   </div>
 </template>
 
