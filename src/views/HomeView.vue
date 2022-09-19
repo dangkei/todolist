@@ -1,9 +1,14 @@
 <template>
-  <div>
+  <div main>
     <navHeader></navHeader>
     <navMain></navMain>
     <navFooter></navFooter>
-    <HelloWorld msg="Welcome to Your Vue.js App"></HelloWorld>
+    <div @click="clickNum1">
+      {{num1}}
+    </div>
+    <div @click="clickNum">
+      {{number}}
+    </div>
   </div>
 </template>
 
@@ -31,6 +36,8 @@
       const obj = ref({
         age: 20
       })*/
+
+      let num1 = ref(20);
       let data = reactive({
         name: 'jack',
         number: 20,
@@ -39,11 +46,20 @@
         },
         arr: ['a', 'b', 'c']
       })
+      let clickNum1 = ()=>{
+        console.log("点击了Num1 = "+num1.value);
+      }
+      let clickNum = ()=>{
+        console.log("点击了number = "+ data.number);
+      }
       return {
         /*number,
         name,
         arr,
         obj*/
+        num1,
+        clickNum,
+        clickNum1,
         ...toRefs(data)
       }
     }
@@ -51,7 +67,7 @@
 </script>
 
 <style scoped>
-  * {
+  .main {
     margin-top: 100px;
     vertical-align: center;
     text-align: center;

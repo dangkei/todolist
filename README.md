@@ -85,7 +85,14 @@ export default defineComponent({
     使用模块化方法 import,export
     引用依赖库 ref，reactive，toRefs
     关键字 components, setup, props,ctx
+    定义变量,使用变量
+	定义方法,使用方法
 
-## 版本3
+## 状态的定义和管理
+	store/index.js
+	state, mutations, actions的意义和使用
+		- state 定义状态
+		- mutations // 同步修改state，都是方法 // 第一个参数是state,第二个参数是要修改的值
+		- actions   // 异步提交mutations // 第一个参数是store， 第二个参数是需要修改的值
 
 ## 这是dev分支
